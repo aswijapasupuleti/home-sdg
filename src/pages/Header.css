@@ -28,6 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Enable wrapping */
 }
 
 .top-bar-info {
@@ -238,11 +239,13 @@ h3 {
   .top-bar .container-fluid {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
   }
 
   .quick-call-container {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 0;
   }
 
   .quick-call {
@@ -253,6 +256,7 @@ h3 {
   .btn-get-started {
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .navbar-brand-text {
@@ -261,6 +265,16 @@ h3 {
 
   .container {
     width: 90%;
+  }
+
+  .top-bar-info,
+  .top-links-container {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .notification-bar {
+    margin: 5px 0;
   }
 }
 
